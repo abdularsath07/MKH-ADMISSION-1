@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.K.H Admissions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="arch">
+      <div class="arch-inner">
+        <img src="logo.jpg" alt="Madrasa Kadar Hussain Admissions logo" class="logo">
+        <h1>M.K.H Admissions</h1>
+        <p class="tagline">Academic Year 2026 - 2027</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <form id="admissionForm" class="card" autocomplete="off">
+
+      <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+
+      <section class="section">
+        <div class="grid">
+          <label class="field span-2">
+            <span>Name</span>
+            <input type="text" name="student_name" required placeholder="Full name of student">
+          </label>
+
+          <label class="field">
+            <span>D.O.B</span>
+            <input type="date" name="dob" required>
+          </label>
+
+          <label class="field">
+            <span>Blood group</span>
+            <select name="blood_group" required>
+              <option value="" disabled selected>Select</option>
+              <option>A+</option>
+              <option>A-</option>
+              <option>B+</option>
+              <option>B-</option>
+              <option>AB+</option>
+              <option>AB-</option>
+              <option>O+</option>
+              <option>O-</option>
+              <option>Don't know</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Mother name</span>
+            <input type="text" name="mother_name" required>
+          </label>
+
+          <label class="field">
+            <span>Father name</span>
+            <input type="text" name="father_name" required>
+          </label>
+
+          <label class="field span-2">
+            <span>Phone number</span>
+            <input type="tel" name="phone" required placeholder="e.g. +91 98765 43210">
+          </label>
+
+          <label class="field span-2">
+            <span>Temporary address</span>
+            <textarea name="temp_address" rows="2" required></textarea>
+          </label>
+
+          <label class="field span-2">
+            <span>Permanent address</span>
+            <textarea name="perm_address" rows="2" required></textarea>
+          </label>
+
+          <fieldset class="field radio-field">
+            <legend>Parents know to read the Quran</legend>
+            <div class="radio-options">
+              <label class="radio-option">
+                <input type="radio" name="parents_quran" value="Yes" required>
+                <span>Yes</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="parents_quran" value="No" required>
+                <span>No</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="field">
+            <span>Which class for admission</span>
+            <select name="class_applying" required>
+              <option value="" disabled selected>Select</option>
+              <option>Class-1</option>
+              <option>Class-2</option>
+              <option>Class-3</option>
+              <option>Class-4</option>
+              <option>Class-5</option>
+              <option>Class-6</option>
+              <option>Class-7</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <button type="submit" class="submit-btn">
+        <span>Submit Admission Form</span>
+      </button>
+
+      <p class="fine-print">By submitting, you confirm the details above are accurate to the best of your knowledge.</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>M.K.H Admissions &middot; Academic Year 2026 - 2027</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+              </html>
