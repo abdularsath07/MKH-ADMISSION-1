@@ -35,7 +35,7 @@
 
           <label class="field">
             <span>D.O.B</span>
-            <input type="date" name="dob" required>
+            <input type="text" name="dob" required placeholder="DD/MM/YYYY" pattern="^\d{1,2}/\d{1,2}/\d{4}$" inputmode="numeric">
           </label>
 
           <label class="field">
@@ -115,6 +115,19 @@
 
       <p class="fine-print">By submitting, you confirm the details above are accurate to the best of your knowledge.</p>
     </form>
+
+    <section id="successScreen" class="card success-screen" hidden>
+      <div class="success-icon">&#10003;</div>
+      <h2>Congratulations!</h2>
+      <p class="success-text">You have applied for M.K.H Admissions</p>
+
+      <canvas id="admissionCanvas" width="800" height="1000" class="admission-canvas"></canvas>
+
+      <div class="success-actions">
+        <a id="downloadCardBtn" class="submit-btn download-btn" download="MKH-Admission-Card.png">Download / Print Card</a>
+        <button type="button" id="newApplicationBtn" class="link-btn">Submit another application</button>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -123,4 +136,4 @@
 
 <script src="script.js"></script>
 </body>
-              </html>
+          </html>
