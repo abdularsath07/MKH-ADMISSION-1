@@ -285,6 +285,70 @@ textarea { resize: vertical; }
   padding-bottom: 40px;
 }
 
+/* ---------- Success screen ---------- */
+
+.success-screen {
+  text-align: center;
+}
+
+.success-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--green-deep);
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.success-screen h2 {
+  font-size: 1.6rem;
+  color: var(--green-deep);
+}
+
+.success-text {
+  color: var(--ink-soft);
+  margin: 8px 0 24px;
+  font-size: 1rem;
+}
+
+.admission-canvas {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px -12px rgba(11,61,46,0.25);
+}
+
+.success-actions {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.download-btn {
+  display: inline-block;
+  text-decoration: none;
+  max-width: 280px;
+  text-align: center;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--green-deep);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
 /* Accessibility: visible focus, reduced motion */
 button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
   outline: 2px solid var(--gold);
@@ -293,4 +357,4 @@ button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
-}
+    }
