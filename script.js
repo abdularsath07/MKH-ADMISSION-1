@@ -1,9 +1,10 @@
-// ---------------------------------------------------------------
+
+    // ---------------------------------------------------------------
 // IMPORTANT: Replace YOUR_ACCESS_KEY below with the key Web3Forms
 // gives you after you sign up (free) at https://web3forms.com
 // using the email luca.arsath120186@gmail.com
 // ---------------------------------------------------------------
-const ACCESS_KEY = "YOUR_ACCESS_KEY";
+const ACCESS_KEY = "c9013007-2015-4d98-b7db-710170c63743";
 const FORM_ENDPOINT = "https://api.web3forms.com/submit";
 
 const form = document.getElementById("admissionForm");
